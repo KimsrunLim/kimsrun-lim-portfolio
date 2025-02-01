@@ -1,0 +1,131 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 76px;
+}
+
+.project {
+  margin-block: 1rem;
+  padding-inline: 1rem;
+
+  border-radius: 20px;
+  background-color: rgba(12, 12, 12, 0.6);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.projectTitle {
+  color: var(--color-text);
+  padding-top: 1rem;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.splitContainer {
+  display: flex;
+  margin-inline: auto;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.terminalBox {
+  width: 48%;
+  background-color: #1e1e1e;
+  /* VSCode dark terminal background */
+  color: #d4d4d4;
+  /* Light grey text */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--color-primary);
+  /* Subtle border similar to VSCode terminal */
+  position: relative;
+  
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.terminalBox::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow {
+  width: 48%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly */
+  align-items: flex-start; /* Aligns to the top */
+  gap: 2rem; /* Space between columns */
+  margin-inline: 10%;
+  margin-block: 2rem;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+.textHeader {
+  color: var(--color-text);
+}
+
+.description, .approach {
+  flex: 1; /* Each section takes equal space */
+  min-width: 40%; /* Prevents shrinking too much */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 18px;
+  color: var(--color-text);
+  text-align: center;
+  background-color: red;
+  background-color: rgba(12, 12, 12, 0.674);
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+
+.image {
+  /* Normal image styling */
+  cursor: pointer;
+  /* Ensure the image shows as clickable initially */
+}
+
+.clicked {
+  pointer-events: none;
+  /* Disable all interactions */
+  user-select: none;
+  /* Prevent text selection (highlighting) */
+}

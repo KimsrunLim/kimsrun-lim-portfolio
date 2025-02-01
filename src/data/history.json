@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Backend Developer",
+    "organisation": "FSI",
+    "startDate": "Jan, 2024",
+    "endDate": "Dec, 2024",
+    "experiences": [
+      "Worked on RE-RASSOR Autonomy",
+      "Designed autonomous system",
+      "Designed multi-rover control center"
+    ],
+    "imageSrc": "history/fsi.png"
+  },
+  {
+    "role": "Robotics Instructor",
+    "organisation": "iD Tech",
+    "startDate": "June, 2024",
+    "endDate": "Aug, 2024",
+    "experiences": [
+      "Designed course curriculum",
+      "Taught coding principles and standards",
+      "Optimized code and hardware"
+    ],
+    "imageSrc": "history/idtech.png"
+  },
+  {
+    "role": "Computer Science Graduate",
+    "organisation": "UCF",
+    "startDate": "Aug, 2022",
+    "endDate": "Dec, 2024",
+    "experiences": [
+      "Built foundation on industry practices",
+      "Tutored 50+ students towards success",
+      "Won mutliple competitions"
+    ],
+    "imageSrc": "history/ucf.png"
+  },
+  {
+    "role": "Web Development Intern",
+    "organisation": "USF",
+    "startDate": "May, 2021",
+    "endDate": "Aug, 2021",
+    "experiences": [
+      "Designed industry level websites",
+      "Applied accessibility practices in projects",
+      "Foundations in responsive development"
+    ],
+    "imageSrc": "history/usf.png"
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Merge k Sorted Linked Lists",
+    "code": [
+      "# Definition for singly-linked list.",
+      "# class ListNode:",
+      "# \t\tdef __init__(self, val=0, next=None):",
+      "# \t\t\tself.val = val",
+      "# \t\t\tself.next = next",
+      "",
+      "class Solution:",
+      "\t\tdef mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:",
+      "\t\t\tmin_heap = []",
+      "",
+      "\t\t\t# Insert the first node of each list into the heap",
+      "\t\t\tfor i, l in enumerate(lists):",
+      "\t\t\t\tif l:",
+      "\t\t\t\t\theappush(min_heap, (l.val, i, l))  # (value, index, node)",
+      "",
+      "\t\t\t# Dummy node to simplify result list construction",
+      "\t\t\tdummy = ListNode(None)",
+      "\t\t\tcur = dummy",
+      "",
+      "\t\t\twhile min_heap:",
+      "\t\t\t\t# Extract the node with the smallest value",
+      "\t\t\t\t_, i, node = heappop(min_heap)",
+      "\t\t\t\tcur.next = node",
+      "\t\t\t\tcur = cur.next",
+      "",
+      "\t\t\t\t# If there is a next node in the list, push it into the heap",
+      "\t\t\t\tif node.next:",
+      "\t\t\t\t\theappush(min_heap, (node.next.val, i, node.next))",
+      "",
+      "\t\t\treturn dummy.next"
+    ],
+    "images": [
+      "../assets/projects/project.png",
+      "../assets/projects/project2.png"
+    ],
+    "description": [
+      "LeetCode Question:",
+      "You are given an array of \"k\" linked-lists \"lists\", each linked-list is sorted in ascending order.",
+      "Merge all the linked-lists into one sorted linked-list and return it.",
+      "apples"
+    ],
+    "approach": [
+      "Used functional components for modularity.",
+      "Implemented CSS Grid for layout efficiency."
+    ]
+  },
+  {
+    "title": "Another Project",
+    "code": [
+      "class Solution:",
+      "\tdef longestValidParentheses(self, s: str) -> int:",
+      "\t\tleft = right = max_length = 0",
+      "",
+      "\t# Left to Right Scan",
+      "\tfor char in s:",
+      "\t\tif char == \"(\":",
+      "\t\t\tleft += 1",
+      "\t\telse:",
+      "\t\t\tright += 1",
+      "\t\tif left == right:",
+      "\t\t\tmax_length = max(max_length, 2 * right)",
+      "\t\telif right > left:",
+      "\t\t\tleft = right = 0  # Reset if invalid",
+      "",
+      "\tleft = right = 0  # Reset for right to left scan",
+      "",
+      "\t# Right to Left Scan",
+      "\tfor char in reversed(s):",
+      "\t\tif char == \")\":",
+      "\t\t\tright += 1",
+      "\t\telse:",
+      "\t\t\tleft += 1",
+      "\t\tif left == right:",
+      "\t\t\tmax_length = max(max_length, 2 * left)",
+      "\t\telif left > right:",
+      "\t\t\tleft = right = 0  # Reset if invalid",
+      "",
+      "\treturn max_length"
+    ],
+    "images": [
+      "../assets/projects/project.png",
+      "../assets/projects/project2.png"
+    ],
+    "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu facilisis diam. Nunc ut auctor nibh. Proin faucibus pulvinar libero blandit tristique. Suspendisse ante justo, posuere ac est vitae, molestie lobortis lacus. Aliquam sollicitudin vitae sapien non iaculis. Vestibulum cursus diam vitae efficitur hendrerit. Vestibulum ac pharetra ante. Sed aliquet egestas nulla, eget placerat quam volutpat vel. Donec eget pulvinar augue. Pellentesque tempus felis diam, non ullamcorper justo iaculis vel. Phasellus fringilla, tortor quis auctor viverra, erat sem tempus odio, ut ullamcorper leo sem at sapien. Cras egestas urna a lectus commodo, vitae porttitor dolor pharetra. Integer tincidunt elit sit."],
+    "approach": ["Yerr"]
+  }
+]
