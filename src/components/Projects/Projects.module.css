@@ -3,7 +3,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 76px;
@@ -12,14 +11,13 @@
 .project {
   margin-block: 1rem;
   padding-inline: 1rem;
-
   border-radius: 20px;
   background-color: rgba(12, 12, 12, 0.6);
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: calc(1.5rem + 2vw);
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -28,7 +26,7 @@
 .projectTitle {
   color: var(--color-text);
   padding-top: 1rem;
-  font-size: 24px;
+  font-size: calc(1.25rem + 1.5vw);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -37,26 +35,23 @@
   display: flex;
   margin-inline: auto;
   margin-top: 1rem;
-  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
+  flex-wrap: nowrap;
+  gap: 2rem;
 }
 
 .terminalBox {
   width: 48%;
   background-color: #1e1e1e;
-  /* VSCode dark terminal background */
   color: #d4d4d4;
-  /* Light grey text */
   padding: 20px;
   border-radius: 8px;
   font-family: "Courier New", monospace;
   height: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--color-primary);
-  /* Subtle border similar to VSCode terminal */
   position: relative;
-  
   overflow: auto;
   scrollbar-width: none;
 }
@@ -81,51 +76,80 @@
   max-height: 100%;
   object-fit: contain;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .textContainer {
   display: flex;
-  justify-content: space-between; /* Distributes space evenly */
-  align-items: flex-start; /* Aligns to the top */
-  gap: 2rem; /* Space between columns */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   margin-inline: 10%;
   margin-block: 2rem;
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  flex-wrap: wrap;
 }
 
 .textHeader {
   color: var(--color-text);
+  font-size: 1.5rem;
 }
 
 .description, .approach {
-  flex: 1; /* Each section takes equal space */
-  min-width: 40%; /* Prevents shrinking too much */
+  flex: 1;
+  min-width: 40%;
   padding: 1.5rem;
   border-radius: 1rem;
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--color-text);
   text-align: center;
-  background-color: red;
   background-color: rgba(12, 12, 12, 0.674);
 }
 
 h4 {
   margin-bottom: 1rem;
-  font-size: 22px;
+  font-size: 1.25rem;
   color: var(--color-primary);
   text-align: center;
 }
 
+/* Mobile responsiveness */
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.image {
-  /* Normal image styling */
-  cursor: pointer;
-  /* Ensure the image shows as clickable initially */
-}
+  .title {
+    font-size: 2rem;
+  }
 
-.clicked {
-  pointer-events: none;
-  /* Disable all interactions */
-  user-select: none;
-  /* Prevent text selection (highlighting) */
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+
+  .splitContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terminalBox, .slideshow {
+    width: 100%;
+    height: 250px;
+  }
+
+  .textContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-inline: 0;
+  }
+
+  .description, .approach {
+    min-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
 }
