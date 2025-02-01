@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./Projects.module.css";
 import projectData from "../../data/projects.json";
+import { getImageUrl } from "../../utils";
 
 export const Projects = () => {
     const [clickedProjectIndex, setClickedProjectIndex] = useState(null); // Track clicked project
@@ -69,7 +70,7 @@ export const Projects = () => {
                             {/* Slideshow Section */}
                             <div className={styles.slideshow} onClick={() => next(projectIndex)}>
                                 <img
-                                    src={project.images[currentImage]}
+                                    src={getImageUrl(project.images[currentImage])}
                                     alt={`Project ${currentImage + 1}`}
                                     className={`${styles.image} ${clickedProjectIndex === projectIndex ? styles.clicked : ''}`}
                                 />

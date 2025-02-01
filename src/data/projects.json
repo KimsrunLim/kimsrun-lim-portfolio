@@ -34,8 +34,8 @@
       "\t\t\treturn dummy.next"
     ],
     "images": [
-      "../assets/projects/project.png",
-      "../assets/projects/project2.png"
+      "projects/project.png",
+      "projects/project2.png"
     ],
     "description": [
       "LeetCode Question:",
@@ -82,8 +82,8 @@
       "\treturn max_length"
     ],
     "images": [
-      "../assets/projects/project.png",
-      "../assets/projects/project2.png"
+      "projects/project.png",
+      "projects/project2.png"
     ],
     "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu facilisis diam. Nunc ut auctor nibh. Proin faucibus pulvinar libero blandit tristique. Suspendisse ante justo, posuere ac est vitae, molestie lobortis lacus. Aliquam sollicitudin vitae sapien non iaculis. Vestibulum cursus diam vitae efficitur hendrerit. Vestibulum ac pharetra ante. Sed aliquet egestas nulla, eget placerat quam volutpat vel. Donec eget pulvinar augue. Pellentesque tempus felis diam, non ullamcorper justo iaculis vel. Phasellus fringilla, tortor quis auctor viverra, erat sem tempus odio, ut ullamcorper leo sem at sapien. Cras egestas urna a lectus commodo, vitae porttitor dolor pharetra. Integer tincidunt elit sit."],
     "approach": ["Yerr"]
