@@ -46,7 +46,7 @@ export const Projects = () => {
 
     return (
         <section className={styles.container} id="projects">
-            <h2 className={styles.title}>Projects</h2>
+            <h2 className={styles.title}>Code Examples</h2>
 
             {projectData.map((project, projectIndex) => {
                 const currentImage = clickedImageIndex[projectIndex]; // Get the current image index for the project

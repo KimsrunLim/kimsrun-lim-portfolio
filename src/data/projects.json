@@ -1,6 +1,6 @@
 [
   {
-    "title": "Merge k Sorted Linked Lists",
+    "title": "Merge k Sorted Lists",
     "code": [
       "# Definition for singly-linked list.",
       "# class ListNode:",
@@ -34,18 +34,42 @@
       "\t\t\treturn dummy.next"
     ],
     "images": [
-      "projects/project.png",
-      "projects/project2.png"
+      "projects/mergeKSorted/MergeK1.png",
+      "projects/mergeKSorted/MergeK2.png",
+      "projects/mergeKSorted/MergeK3.png",
+      "projects/mergeKSorted/MergeK4.png",
+      "projects/mergeKSorted/MergeK5.png",
+      "projects/mergeKSorted/MergeK6.png",
+      "projects/mergeKSorted/MergeK7.png",
+      "projects/mergeKSorted/MergeK8.png",
+      "projects/mergeKSorted/MergeK9.png",
+      "projects/mergeKSorted/MergeK10.png",
+      "projects/mergeKSorted/MergeK11.png",
+      "projects/mergeKSorted/MergeK12.png",
+      "projects/mergeKSorted/MergeK13.png",
+      "projects/mergeKSorted/MergeK14.png",
+      "projects/mergeKSorted/MergeK15.png",
+      "projects/mergeKSorted/MergeK16.png",
+      "projects/mergeKSorted/MergeK17.png",
+      "projects/mergeKSorted/MergeK18.png",
+      "projects/mergeKSorted/MergeK19.png",
+      "projects/mergeKSorted/MergeK20.png",
+      "projects/mergeKSorted/MergeK21.png"
     ],
     "description": [
-      "LeetCode Question:",
-      "You are given an array of \"k\" linked-lists \"lists\", each linked-list is sorted in ascending order.",
-      "Merge all the linked-lists into one sorted linked-list and return it.",
-      "apples"
+      "A classic problem in linked lists and priority queues. The goal is to merge k sorted linked lists into a single sorted linked list.",
+      "\n- You are given an array of k linked lists.",
+      "\n- Each linked list is sorted in ascending order.",
+      "\n- You need to merge all these linked lists into one sorted linked list and return it."
     ],
     "approach": [
-      "Used functional components for modularity.",
-      "Implemented CSS Grid for layout efficiency."
+      "Step 1:",
+      "Create a Min-Heap and push nodes from all lists into the Min-Heap.",
+      "\nStep 2",
+      "Pop root from Min-Heap and heafify after every pop. During pop, add popped node to dummy list.",
+      "\nStep 3",
+      "Return dummy.next list.",
+      "By returning dummy.next, we return the correct result without the starting dummy node."
     ]
   },
   {
@@ -85,7 +109,11 @@
       "projects/project.png",
       "projects/project2.png"
     ],
-    "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu facilisis diam. Nunc ut auctor nibh. Proin faucibus pulvinar libero blandit tristique. Suspendisse ante justo, posuere ac est vitae, molestie lobortis lacus. Aliquam sollicitudin vitae sapien non iaculis. Vestibulum cursus diam vitae efficitur hendrerit. Vestibulum ac pharetra ante. Sed aliquet egestas nulla, eget placerat quam volutpat vel. Donec eget pulvinar augue. Pellentesque tempus felis diam, non ullamcorper justo iaculis vel. Phasellus fringilla, tortor quis auctor viverra, erat sem tempus odio, ut ullamcorper leo sem at sapien. Cras egestas urna a lectus commodo, vitae porttitor dolor pharetra. Integer tincidunt elit sit."],
-    "approach": ["Yerr"]
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu facilisis diam. Nunc ut auctor nibh. Proin faucibus pulvinar libero blandit tristique. Suspendisse ante justo, posuere ac est vitae, molestie lobortis lacus. Aliquam sollicitudin vitae sapien non iaculis. Vestibulum cursus diam vitae efficitur hendrerit. Vestibulum ac pharetra ante. Sed aliquet egestas nulla, eget placerat quam volutpat vel. Donec eget pulvinar augue. Pellentesque tempus felis diam, non ullamcorper justo iaculis vel. Phasellus fringilla, tortor quis auctor viverra, erat sem tempus odio, ut ullamcorper leo sem at sapien. Cras egestas urna a lectus commodo, vitae porttitor dolor pharetra. Integer tincidunt elit sit."
+    ],
+    "approach": [
+      "Yerr"
+    ]
   }
 ]
