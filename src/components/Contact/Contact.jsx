@@ -36,7 +36,7 @@ export const Contact = () => {
           </a>
         </li>
         <li className={styles.link}>
-          <a href="https://github.com/KimsrunLim" className={styles.contactBtn}>
+          <a href="https://github.com/KimsrunLim" target="_blank" className={styles.contactBtn}>
             <div className={styles.contactBtnInfo}>
               <img
                 src={getImageUrl("contact/githubIcon.png")}
