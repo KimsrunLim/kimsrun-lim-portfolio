@@ -8,20 +8,23 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
-  padding: clamp(30px, 5vw, 58px) 10%;
+  padding: clamp(30px, 5vw, 40px) 10%;
   gap: clamp(5px, 2vw, 10px);
+  align-items: center;
 }
 
 .text h2 {
-  font-size: clamp(2rem, 6vw, 5rem); /* Scales dynamically */
+  display: flex;
+  font-size: clamp(1.5rem, 6vw, 2rem); /* Scales dynamically */
   font-weight: 700;
   letter-spacing: clamp(1px, 0.5vw, 4px);
   text-align: center;
+  justify-content: center;
 }
 
 .text p {
   text-align: center;
-  font-size: clamp(1rem, 4vw, 2.5rem);
+  font-size: clamp(0.5rem, 4vw, 1rem);
   font-weight: 400;
   letter-spacing: clamp(1px, 0.3vw, 2px);
 }
@@ -29,9 +32,17 @@
 .links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   list-style: none;
   gap: clamp(10px, 3vw, 26px);
+}
+
+.contactIcons {
+  height: 3rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
 }
 
 .link {
@@ -43,9 +54,30 @@
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: clamp(1rem, 3vw, 1.8rem);
+  font-size: clamp(0.5rem, 3vw, 1rem);
   font-weight: 400;
   letter-spacing: clamp(0.5px, 0.3vw, 1.5px);
+  padding-left: 1.5rem;
+}
+
+.contactBtn {
+  display: flex;
+  color: var(--color-text);
+  border-radius: 100px;
+  padding: clamp(5px, 2vw, 10px) clamp(5px, 3vw, 20px);
+}
+
+.contactBtnInfo {
+  display: flex;
+  align-items: center;
+}
+
+.contactBtn:hover {
+  color: var(--color-primary);
+}
+
+.contactBtn:active {
+  color: var(--color-text);
 }
 
 /* Responsive Adjustments */

@@ -66,12 +66,13 @@
 }
 
 .aboutItem h3 {
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 .aboutItem p {
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 /* Mobile Responsiveness */

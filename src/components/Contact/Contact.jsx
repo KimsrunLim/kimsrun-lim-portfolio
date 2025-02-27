@@ -12,19 +12,40 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">ksrunlim@gmail.com</a>
+          <a href="mailto:ksrunlim@gmail.com" className={styles.contactBtn}>
+            <div className={styles.contactBtnInfo}>
+              <img
+                src={getImageUrl("contact/emailIcon.png")}
+                alt="Email icon"
+                className={styles.contactIcons}
+              />
+              ksrunlim@gmail.com
+            </div>
+          </a>
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/kimsrun-lim/">linkedin.com/in/kimsrun-lim/</a>
+          <a href="https://www.linkedin.com/in/kimsrun-lim/" target="_blank" className={styles.contactBtn}>
+            <div className={styles.contactBtnInfo}>
+              <img
+                src={getImageUrl("contact/linkedinIcon.png")}
+                alt="LinkedIn icon"
+                className={styles.contactIcons}
+              />
+              linkedin.com/in/kimsrun-lim
+            </div>
+          </a>
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/KimsrunLim">github.com/KimsrunLim</a>
+          <a href="https://github.com/KimsrunLim" className={styles.contactBtn}>
+            <div className={styles.contactBtnInfo}>
+              <img
+                src={getImageUrl("contact/githubIcon.png")}
+                alt="Github icon"
+                className={styles.contactIcons}
+              />
+              github.com/KimsrunLim
+            </div>
+          </a>
         </li>
       </ul>
     </footer>
